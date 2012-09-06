@@ -1,0 +1,39 @@
+// Textarea field and it's modifiers.
+//
+// .control-group--focused - Textarea on focus
+// .control-group--large - Large Textarea
+// .control-group--full - Full width Textarea
+// .control-group--short - Short Textarea
+// .control-group--disabled - Disabled/read-only Textarea
+// .control-group--error - Textarea with Error styles
+// .control-group--horizontal - Horizontal layout variation
+//
+// Styleguide 3.2
+
+/* 
+  css stylesheet comment
+
+  Textarea syles
+  inherits from textfield styles
+*/
+
+.control-group-textarea {
+	@extend .control-group-text;
+
+	.control-group__control {
+		height: 100px;
+		padding: spacing(0.5);
+	}
+
+	&.control-group--tall {
+		.control-group__control {
+			height: 120px;
+		}
+	}
+
+	&.control-group--huge {
+		.control-group__control {
+			height: 300px;
+		}
+	}
+}

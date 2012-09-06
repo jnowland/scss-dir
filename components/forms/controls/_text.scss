@@ -1,0 +1,174 @@
+// Text field and it's modifiers. Extends .control-group-text.
+//
+// .control-group--focused - Text field on focus
+// .control-group--large - Large Text field
+// .control-group--full - Full width Text field
+// .control-group--short - Short Text field
+// .control-group--disabled - Disabled/read-only Text field
+// .control-group--error - Text field with Error styles
+// .control-group--horizontal - Horizontal layout variation
+//
+// Styleguide 3.1
+
+/* 
+	css stylesheet comment
+
+	Textfield syles
+	most other fieldtypes will inherit these styles
+*/
+
+.control-group-text {
+	// Default text input
+	.control-group__control {
+		border: 1px solid $border-color2;
+		color:$text-color1;
+		display: inline-block;
+		height: 36px;
+		line-height:1;
+		padding: 0 5px;
+		width: 95.5%;
+	}
+
+	::-moz-placeholder {
+		color:$text-color4;
+	}
+
+	::-webkit-input-placeholder {
+		color:$text-color4;
+	}
+
+	// text input on focus
+	&.control-group--focused {
+
+		.control-group__control {
+
+			border-color: $border-color1;
+			box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+			outline: 0;
+			outline: thin dotted \9; // IE6-9
+
+			&::-webkit-input-placeholder {
+				opacity:0;
+			}
+		}
+	}
+
+	// larger version of text input
+	&.control-group--large {
+
+		.control-group__label {
+			font-size: text-size(5);
+			line-height: baseline(2);
+		}
+
+		.control-group__control {
+			padding:0 spacing(0.5);
+			height:40px;
+			font-size: text-size(4);
+		}
+	}
+
+	// full width version of text input
+	&.control-group--full {
+		.control-group__control {
+			width:100%;
+			max-width:100%;
+		}
+	}
+
+	// short version of text input
+	&.control-group--short {
+		.control-group__control {
+			width:198px;
+		}
+	}
+
+	// disabled text input
+	.control-group__control[disabled],
+	.control-group__control[readonly],
+	&.control-group--disabled .control-group__control {
+		background-color: $bg-color4;
+		border-color: $border-color2;
+		box-shadow:none;
+		cursor: not-allowed;
+	}
+
+	// text input with error styles
+	&.control-group--error {
+
+		.control-group__control {
+			border-color: $error-color;
+			box-shadow: 0 0 3px rgba($error-color, 0.3);
+
+			&:focus {
+				border-color: $border-color1;
+				box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+			}
+		}
+
+		::-moz-placeholder {
+			color: $error-color !important;
+		}
+
+		::-webkit-input-placeholder {
+			color: $error-color !important;
+		}
+
+		.control-group--error-msg {
+			background: $bg-color2;
+			border-radius: 3px;
+			color: #fff;
+			display: block;
+			font-size: text-size(2);
+			padding: 3px $spacing-small;
+			position: absolute;
+			text-align: center;
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+			top: -7px;
+			left: 0;
+			width: 290px;
+
+			&:before {
+				@include transform(translateX(-50%));
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 5px solid $bg-color2;
+				bottom: -5px;
+				content: "";
+				height: 0; 
+				left: 50%;
+				position: absolute;
+				width: 0; 
+
+			}
+		}
+	}
+
+	// Horizonatal layout
+	&.control-group--horizontal,
+	.form-horizontal & {
+		@include clear-floats;
+		margin-bottom:baseline(1);
+		$width: 100px;
+
+		.control-group__label {
+			float: left;
+			padding-top: 5px;
+			width: $width;
+		}
+
+		.control-group__controls {
+			margin-left: $width + gutter(1);
+		}
+	}
+
+	// Invisible text input
+	&.control-group--invisible {
+		.control-group__control {
+			border:0;
+			box-shadow:none;
+			padding:0;
+			height: baseline(2);
+		}
+	}
+}

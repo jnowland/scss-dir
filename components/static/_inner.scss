@@ -1,0 +1,6 @@
+.inner {
+	@include clear-floats;
+	margin: 0 auto;
+	position: relative;
+	width: $grid-width; // 940px;
+}

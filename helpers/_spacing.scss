@@ -1,0 +1,11 @@
+// spacing variables
+
+$spacing-small: 10px;
+$spacing-normal: 20px;
+$spacing-medium: 30px;
+$spacing-large: 40px;
+
+// generate spacing classes.
+// https://github.com/anthonyshort/stitch-css/blob/master/stylesheets/stitch/patterns/layout/_spacing.scss
+
+@include spacing-classes();

@@ -1,0 +1,59 @@
+// Titles
+//
+// .title1 - H1
+// .title2 - H2
+// .title3 - H3
+// .title4 - H4
+// .title5 - H5
+// .title6 - H6
+//
+// Styleguide 1.1
+
+.title1 {
+	@include improve-text-rendering;
+	font-size: nth($type-sizes, 10);
+	font-weight: 500;
+	line-height: baseline(2.25)
+}
+
+.title2 {
+	@include improve-text-rendering;
+	font-size: nth($type-sizes, 8);
+	font-weight: 500;
+	line-height: baseline(1.80)
+}
+
+.title3 {
+	@include improve-text-rendering;
+	font-size: nth($type-sizes, 6);
+	font-weight: 500;
+	line-height: baseline(1.65)
+}
+
+.title4 {
+	@include improve-text-rendering;
+	font-size: nth($type-sizes, 6);
+	font-weight: 500;
+}
+
+.title5 {
+	@include improve-text-rendering;
+	font-size: nth($type-sizes, 5);
+	font-weight: 700;
+}
+
+.title6 {
+	@include improve-text-rendering;
+	font-size: nth($type-sizes, 4);
+	font-weight: 700;
+}
+
+.site-title {
+	display: block;
+	height: 197px;
+	margin-left: -56px;
+	margin-top: 90px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 466px;
+}
