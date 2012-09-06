@@ -1,17 +1,6 @@
 // Define styles for blocks of content scoped within the .copy rather than
 // making them global. Global styles will be constantly overridden.
 // Add a class of .copy to a div and the contents will render as a block of copy text
-//
-// Styleguide 1.4.
-
-/* 
-	css stylesheet comment
-	
-	Copy styles
-	For general block of text, wrap it in a class of .copy to inherit these styles
-
-	<div class="copy"> <p>Blah Blah Blah</p></div>
-*/
 
 .copy {
 	
