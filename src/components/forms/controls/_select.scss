@@ -1,31 +1,10 @@
 // Select Field
-//
-// .control-group--focused - Select field on focus
-// .control-group--large - Select Text field
-// .control-group--full - Full width Select field
-// .control-group--short - Short Select field
-// .control-group--disabled - Disabled/read-only Select field
-// .control-group--error - Select field with Error styles
-// .control-group--horizontal - Horizontal layout variation
-//
-// Styleguide 3.4
-
-/* 
-  css stylesheet comment
-
-  Select syles
-  inherits from textfield styles
-*/
 
 .control-group-select {
 	@extend .control-group-text;
 
 	.control-group__control {
 		@include appearance(none);
-		@include background(
-			image-url("icons/standard/icon-select-arrows.png") right center no-repeat,
-			linear-gradient(top , lighten($bg-color4, 2), $bg-color5, lighten($bg-color4, 2))
-      	);
 		box-shadow:none;
 		color:$text-color3;
 		padding: 0;
@@ -52,39 +31,5 @@
 		.control-group__control {
 			background-image:none;
 		}
-	}
-
-	// Specific styles for the DOB selects
-
-	.control-group-dob {
-
-		.control-group__controls {
-			float: left;
-			margin-left: 5%;
-			width: 28%;
-
-			&:first-child {
-				margin-left: 0;
-			}
-		}
-
-		.control-group__control {
-			width: 100%;
-		}
-	}
-}
-
-.control-group-state-postcode {
-	@include clear-floats;
-
-	.control-group-state {
-		float: left;
-		width: 45% ;
-	}
-
-	.control-group-postcode {
-		float: right;
-		margin-right: 10px;
-		width: 45%;
 	}
 }

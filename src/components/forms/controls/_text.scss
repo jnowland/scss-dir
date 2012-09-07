@@ -1,26 +1,9 @@
-// Text field and it's modifiers. Extends .control-group-text.
-//
-// .control-group--focused - Text field on focus
-// .control-group--large - Large Text field
-// .control-group--full - Full width Text field
-// .control-group--short - Short Text field
-// .control-group--disabled - Disabled/read-only Text field
-// .control-group--error - Text field with Error styles
-// .control-group--horizontal - Horizontal layout variation
-//
-// Styleguide 3.1
-
-/* 
-	css stylesheet comment
-
-	Textfield syles
-	most other fieldtypes will inherit these styles
-*/
+// Text field
 
 .control-group-text {
-	// Default text input
+
 	.control-group__control {
-		border: 1px solid $border-color2;
+		border: 1px solid $border-color1;
 		color:$text-color1;
 		display: inline-block;
 		height: 36px;
@@ -87,8 +70,8 @@
 	.control-group__control[disabled],
 	.control-group__control[readonly],
 	&.control-group--disabled .control-group__control {
-		background-color: $bg-color4;
-		border-color: $border-color2;
+		background-color: $bg-color1;
+		border-color: $border-color1;
 		box-shadow:none;
 		cursor: not-allowed;
 	}
@@ -115,7 +98,7 @@
 		}
 
 		.control-group--error-msg {
-			background: $bg-color2;
+			background: $error-color;
 			border-radius: 3px;
 			color: #fff;
 			display: block;
@@ -132,7 +115,7 @@
 				@include transform(translateX(-50%));
 				border-left: 5px solid transparent;
 				border-right: 5px solid transparent;
-				border-top: 5px solid $bg-color2;
+				border-top: 5px solid $error-color;
 				bottom: -5px;
 				content: "";
 				height: 0; 
