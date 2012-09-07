@@ -1,12 +1,12 @@
 // Typography
-$type-baseline            	: 24px;
-$type-font-family1			: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$type-font-family2			: "museo", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$type-font-size           	: 16px;
-$type-weight			 	: 400;
-$type-selection-background 	: $accent-color3;
-$type-selection-color     	: $text-color5;
-$type-color				 	: $text-color2;
-$type-color-inversed	 	: $text-color5;
+$type-baseline              : 24px;
+$type-font-family1          : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$type-font-family2          : "museo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$type-font-size             : 16px;
+$type-weight                : 400;
+$type-selection-background  : $error-color;
+$type-selection-color       : $warning-color;
+$type-color                 : $text-color1;
+$type-color-inversed        : $text-color2;
 
 $type-sizes:13px 14px 16px 18px 20px 24px 27px 30px 33px 36px;

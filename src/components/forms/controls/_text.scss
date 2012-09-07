@@ -13,11 +13,11 @@
 	}
 
 	::-moz-placeholder {
-		color:$text-color4;
+		color:$warning-color;
 	}
 
 	::-webkit-input-placeholder {
-		color:$text-color4;
+		color:$warning-color;
 	}
 
 	// text input on focus
