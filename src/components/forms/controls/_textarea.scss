@@ -1,28 +1,3 @@
-<<<<<<< HEAD
 /* ==========================================================================
-   Textareas
+   Forms: Textareas
    ========================================================================== */
-=======
-// Textarea
-
-.control-group-textarea {
-	@extend .control-group-text;
-
-	.control-group__control {
-		height: 100px;
-		padding: spacing(0.5);
-	}
-
-	&.control-group--tall {
-		.control-group__control {
-			height: 120px;
-		}
-	}
-
-	&.control-group--huge {
-		.control-group__control {
-			height: 300px;
-		}
-	}
-}
->>>>>>> 1a8af1b90b03e8626c35e48ab65b475d8c95e071
