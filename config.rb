@@ -1,5 +1,5 @@
 # Require any additional compass plugins here.
-require "stitch"
+# require "stitch"
 
 http_path = "/"
 css_dir = "css"

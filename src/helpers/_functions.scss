@@ -1,26 +1,3 @@
-// @function text-size($n)
-// This function takes 1 param and is called like so: font-size: text-size(4);
-// It will return the 4th value in the $type-sizes list located in settings/type.scss
-@function text-size($n) {
-	@return nth($type-sizes,$n);
-}
-
-// @function baseline($n, $size: $baseline)
-// This function takes 1 param and is called like so: line-height: baseline(1);
-// It will return the $n times the default $baseline value, located in components/grid/default-grid.scss
-@function baseline($n, $size: $spacing-normal) {
-	@return $n * $size;
-}
-
-// @function spacing($n, $size: $baseline)
-// This function takes 1 param and is called like so: padding: spacing(1);
-// It will return the $n times the default $baseline value, located in components/grid/default-grid.scss
-@function spacing($n, $size: $spacing-normal) {
-	@return $n * $size;
-}
-
-// Great for utilising the same widths as grids spanX classes for layout purposes
-// @include span-width(2);
-@function span-width($n, $col:60px, $gutter:20px) {
-	@return ($n * $col) + (($n - 1) * $gutter);
-}
+/* ==========================================================================
+   Functions
+   ========================================================================== */

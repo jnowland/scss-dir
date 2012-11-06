@@ -1,34 +1,3 @@
-// Grid variables
-// https://github.com/chrisbuttery/Gridlor/blob/master/index.html
-
-$columns		: 12;
-$column-width	: 60px;
-$gutter-width	: 20px;
-$grid-width		: 940px;
-
-.container {
-	width: 940px
-}
-
-.row {
-	@include clear-floats;
-	margin-top: 60px;
-	margin-left: (-$gutter-width);
-	*zoom: 1; 
-	
-	[class*="span"] {
-		float: left;
-		margin-left: $gutter-width;
-		*zoom: 1; 
-	}
-	
-	@for $i from 1 through $columns {
-		.span#{$i} { 
-			width: ($column-width * $i) + ($gutter-width * ($i - 1));
-		}
-	
-		.offset#{$i} { 
-			margin-left: ($column-width * $i) + ($gutter-width * ($i + 1));
-		}
-	}
-}
+/* ==========================================================================
+   Grid: Default
+   ========================================================================== */
